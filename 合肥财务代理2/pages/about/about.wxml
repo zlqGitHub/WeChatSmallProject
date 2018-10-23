@@ -1,0 +1,51 @@
+<!--pages/about/about.wxml-->
+<import src="../../utils/wxParser/index.wxml"/>
+
+<view class="container">
+  <view class="weui-panel">
+      <view class="weui-panel__hd">
+        <image class="logo" mode="widthFix" src="{{company.logo}}"></image>
+        <text class="title">{{company.name}}</text>
+      </view>
+      <view class="weui-panel__bd">
+          <view class="weui-media-box weui-media-box_small-appmsg">
+              <view class="weui-cells weui-cells_in-small-appmsg">
+                  <view class="weui-cell weui-cell_access">
+                      <view class="weui-cell__bd weui-cell_primary">
+                          <view class="title">公司资质</view>
+                          <view class="image">
+                            <block wx:for="{{company.aptitude}}" wx:key="true">
+                            <view class="image-item">
+                              <image mode="scaleToFill" bindtap="previewImage" src="{{item}}" data-urls="{{company.aptitude}}" data-current="{{item}}"></image>
+                            </view>
+                            </block>
+                          </view> 
+                      </view>
+                  </view>
+                  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='findLocation'>
+                      <view class="weui-cell__bd weui-cell_primary">
+                          <view class="title">公司地址</view>
+                      </view>
+                      <view class="weui-cell__ft weui-cell__ft_in-access">{{company.address}}</view>
+                  </view>
+                  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="callPhone">
+                      <view class="weui-cell__bd weui-cell_primary">
+                          <view class="title">联系电话</view>
+                      </view>
+                      <view class="weui-cell__ft weui-cell__ft_in-access" >{{company.telphone}}</view>
+                  </view>
+                  <view class="weui-cell weui-cell_access">
+                      <view class="weui-cell__bd weui-cell_primary">
+                          <view class="title">公司简介</view>
+                          <view class="p">
+                              <!-- {{company.intro}} -->
+                              <template is="wxParser" data="{{wxParserData:intro.nodes}}" />
+                          </view>
+                      </view>
+                  </view>
+              </view>
+          </view>
+      </view>
+  </view>
+  <include src="../../templates/footer/footer.wxml" />
+</view>

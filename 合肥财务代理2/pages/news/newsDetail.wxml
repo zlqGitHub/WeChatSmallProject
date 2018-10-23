@@ -1,0 +1,16 @@
+<!--pages/news/newsDetail.wxml-->
+<view class="weui-panel">
+    <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+            <view class="weui-media-box__title weui-media-box__title_in-text">{{title}}</view>
+            <view class="weui-media-box-desc">
+                {{description}}
+            </view>
+            <view class="weui-media-box__info">
+                <view class="weui-media-box__info__meta">{{created}}</view>
+                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">苑博财务</view>
+            </view>
+        </view>
+    </view>
+</view>
+<include src="../../templates/footer/footer.wxml" />
