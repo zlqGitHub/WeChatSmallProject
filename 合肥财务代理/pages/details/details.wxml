@@ -1,0 +1,10 @@
+<!--pages/details/details.wxml-->
+
+<view class="weui-form-preview__item">
+            <view class="weui-cell__bd">{{objectInfo.title}}</view>
+            <view class="weui-form-preview__value">
+
+              <view class="weui-flex">{{objectInfo.content}} </view>
+
+            </view>
+       </view>
