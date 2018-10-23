@@ -1,0 +1,4 @@
+/* pages/service/serviceList.wxss */
+ page{
+  padding: 10px 0;
+} 

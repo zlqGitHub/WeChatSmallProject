@@ -1,0 +1,19 @@
+<!--pages/news/news.wxml-->
+
+<view class="weui-panel weui-panel_access">
+    <view class="weui-panel__bd">
+        <block wx:for="{{newsInfo}}" wx:key="true"> 
+        <navigator url="./newsDetail?id={{item.id}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                <image class="weui-media-box__thumb" src="{{item.cover}}" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">{{item.title}}</view>
+                <view class="weui-media-box__desc">{{item.description}}</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        </block>
+    </view>
+</view>
+<include src="../../templates/footer/footer.wxml" />

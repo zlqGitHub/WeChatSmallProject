@@ -1,0 +1,15 @@
+<view class="weui-panel">
+    <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+            <!-- <view class="weui-media-box__title weui-media-box__title_in-text">{{service.title}}</view> -->
+            <view class="weui-media-box-desc">
+                {{service.content}} 
+            </view>
+            <view class="weui-media-box__info">
+                <view class="weui-media-box__info__meta">{{service.created_at}}</view>
+                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{service.author}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<include src="../../templates/footer/footer.wxml" />
