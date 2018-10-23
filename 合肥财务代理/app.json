@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/shouye/shouye",
+    "pages/serve/serve",
+    "pages/news/news",
+    "pages/about/about",
+    "pages/details/details"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1985D5",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "合肥财务管理",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#1985D5",
+    "list": [
+      {
+        "pagePath": "pages/shouye/shouye",
+        "text": "合肥苑博财务公司",
+        "iconPath": "/resources/images/shouye.png",
+        "selectedIconPath": "/resources/images/shouyeSelected.png"
+      },
+      {
+        "pagePath": "pages/serve/serve",
+        "text": "服务项目",
+        "iconPath": "/resources/images/serve.png",
+        "selectedIconPath": "/resources/images/serveSelected.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "新闻中心",
+        "iconPath": "/resources/images/new.png",
+        "selectedIconPath": "/resources/images/newSelected.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于苑博",
+        "iconPath": "/resources/images/about.png",
+        "selectedIconPath": "/resources/images/aboutSelected.png"
+      }
+    ]
+  }
+}

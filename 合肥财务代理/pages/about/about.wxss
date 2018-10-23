@@ -1,0 +1,49 @@
+/* pages/about/about.wxss */
+@import '../../wxParser/index.wxss';
+page{
+   background: #F3F3F3;
+}
+.weui-footer{
+  margin: 15px 0;
+}
+.weui-panel__hd{
+  font-size: 20px;
+  color: #000;
+}
+.weui-cell_link{
+  height: 30px;
+}
+.weui-cell__bd{
+  color: #000;
+}
+.weui-cell_input{
+  height: 50px;
+}
+
+.weui-form-preview__value{
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #EBEBEB;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #cfcfcf;
+}
+
+.img{
+  width: 225rpx;
+  height: 300rpx;
+  margin-left: 30px;
+}
+
+.weui-form-preview__value{
+  font-size: 16px;
+}
+.weui-media-box__title{
+  font-size: 22px;
+}
