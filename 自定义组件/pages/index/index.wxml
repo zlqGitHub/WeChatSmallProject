@@ -1,0 +1,12 @@
+<!--pages/index/index.wxml-->
+使用自定义组件：
+
+<custom-checkbox title="我是自定义组件"></custom-checkbox>
+
+<icon type="success" size="60" color="#ff00ff"></icon>
+
+<custom-icon type='car' color="#0000ff" size="50"></custom-icon>
+
+<custom-icon type='close' color="#00aaff" size="50"></custom-icon>
+
+<custom-icon type='store' color="#ba00ff" size="50"></custom-icon>

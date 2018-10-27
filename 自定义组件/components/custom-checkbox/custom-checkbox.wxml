@@ -1,0 +1,6 @@
+<view>
+  <!-- id="checkbox" for='checkbox' 点击title时可以触发选中事件 -->
+  <checkbox id='checkbox' checked='true'></checkbox>
+  <label for='checkbox' class='label' bindtap='labelTab'>{{title}}</label>
+
+</view>

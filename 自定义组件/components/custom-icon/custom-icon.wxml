@@ -1,0 +1,9 @@
+<!--components/custom-icon.wxml-->
+
+<view class="iconfont {{ type ? 'icon-' + type : ''}} " style="font-size:{{size}}px;color:{{color}}">
+
+</view>
+
+
+
+
