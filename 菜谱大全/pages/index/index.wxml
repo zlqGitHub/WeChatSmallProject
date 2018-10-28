@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="flex-row">
+    <block wx:for="{{cookCategoryList}}" wx:key="true">
+      <view class="flex-item">
+        <navigator url="../categoryList/categoryList?pid={{item.parentId}}">{{item.name}}</navigator>
+      </view>
+    </block>
+  </view>
+</view>

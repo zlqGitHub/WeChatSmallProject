@@ -1,0 +1,14 @@
+/* pages/index/index.wxss */
+
+.flex-row{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-item{
+  flex: 0 1 25%;
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center;
+  background: palegreen;
+}

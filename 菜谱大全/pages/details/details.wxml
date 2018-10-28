@@ -1,0 +1,49 @@
+<!--pages/details/details.wxml-->
+
+<view class="container">
+    <view class="top">
+        <image class="albums" mode="scaleToFill" src="/resource/images/hongshaorou.jpg"></image>
+    </view>
+    <view class="content">
+        <view class="title">
+            <text>红烧肉</text>
+        </view>
+        <view class="imtro">
+            <text class="imtro-title">描述</text>
+            <text>红烧肉，各地各家的做法稍有不同味道即大不一样，中餐的精妙在于食材随意性而产生的变化，南方习惯用酱油(老抽)调色，而北方则偏爱炒糖色。 女人不要为了保持好身材，刻意与美味的肉类食品绝缘哦。其实，很多科学证明，适当的吃肉并不会增加额外的脂肪。 猪肉经过小火煸炒出油后，炖出来的红炒肉是肥而不腻，软烂入味，非常的好吃美味，也非常适合咱们的健康理念，即少油，又解馋，又解腻，下面，为你推荐这种红烧肉的经典做法，不用一滴油就可以做出美味健康的红烧肉。</text>
+        </view>
+        <view class="burden">
+            <text class="burden-title">用料</text>
+            <text>葱段,适量;八角,2个;干辣椒,4个;香叶,4片;桂皮,1块;鲜姜,1块;干山楂片,4片;黄油,适量;老抽,适量;生抽,适量;白糖,适量;开水,适量</text>
+        </view>
+        <view class="steps">
+            <text class="steps-title">做法</text>
+            <block>
+              <view class="steps-content">
+                  <text>
+                    1.猪肉清洗干净切成方块，冷水下锅，水开后撇去上面的浮沫。
+                  </text>
+                  <image mode="aspectFill" src="/resource/images/1.jpg"></image>
+              </view>
+              <view class="steps-content">
+                  <text>
+                    2.焯好的肉块捞出，用温水清洗干净。
+                  </text>
+                  <image mode="aspectFill" src="/resource/images/2.jpg"></image>
+              </view>
+              <view class="steps-content">
+                  <text>
+                    3.准备好调料：干辣椒，桂皮，香叶，八角，（大蒜也可以不放）。
+                  </text>
+                  <image mode="aspectFill" src="/resource/images/3.jpg"></image>
+              </view>
+              <view class="steps-content">
+                  <text>
+                    4.做锅开小火，不放油，把肉块放入反复煸炒，煸炒至肉块有点焦香，有油渗出，关火把肉块捞出。
+                  </text>
+                  <image mode="aspectFill" src="/resource/images/4.jpg"></image>
+              </view>
+            </block>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,48 @@
+/* pages/details/details.wxss */
+
+.top{
+  width: 100%;
+}
+
+.top .albums{
+  width: 750rpx;
+}
+
+.content{
+  padding:0 20rpx;
+  font-size: 30rpx;
+}
+
+.content .title{
+  text-align: center;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 50rpx;
+  background: #FFFFFF;
+}
+
+.content .imtro{
+  
+}
+
+.content .imtro-title,.content .burden-title,.content .steps-title{
+  font-size: 34rpx;
+  font-weight: bolder;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.content .burden{
+  margin: 40rpx 0;
+}
+
+.content .steps-content{
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.content .steps-content text{
+  text-align: left;
+  display: block;
+  margin-bottom: 20rpx;
+}

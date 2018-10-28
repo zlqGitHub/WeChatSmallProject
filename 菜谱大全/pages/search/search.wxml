@@ -1,0 +1,34 @@
+<!--pages/search/search.wxml-->
+
+<view class="container">
+    <view class="search">
+      <view class="left">
+        <input class="input" bindinput="input"  bindfocus="focus" bindblur="blur"/>
+        <icon class="searchIcon" type="search" size="20" color="white" hidden="{{ searchIcon }}"/>
+      </view>
+      <view class="right">
+        <button bindtap="searchTap">搜索</button>
+      </view>
+    </view>
+
+    <view class="result">
+      <block wx:for="{{searchResult}}" wx:key="true">
+        <view class="item">
+          <view class="left">
+            <navigator url="/pages/details/details?id={{item.id}}" hover-class="none">
+              <image mode="scaleToFill" src="{{item.albums}}"></image>      
+            </navigator>
+          </view>
+          <view class="right">
+            <view class="title">
+              <text>{{item.title}}</text>
+            </view>
+            <view class="imtro">
+              <text>{{item.imtro}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view hidden="{{moreHidden}}">没有更多</view>
+    </view>
+</view>
