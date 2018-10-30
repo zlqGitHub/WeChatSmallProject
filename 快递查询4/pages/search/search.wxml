@@ -1,0 +1,26 @@
+<!--pages/search/search.wxml-->
+<view class='container'>
+  <input class='writeDown' placeholder='请输入快递单号' bindinput='writeDown'></input>
+
+  <radio-group class="radio-group" bindchange='selectChange'>
+    <!-- <label class='radio' wx:for="{{result}}" wx:key="true">
+      <radio value='{{item.no}}' color='#3481EB' checked='{{item.checked}}'>{{item.com}}</radio>
+    </label> -->
+    请选择快递公司：
+     <picker bindchange="bindComChange" value="{{index}}" range="{{result2}}" range-key='com'>
+         <button size='mini' class='comBtn'>选择</button>
+     </picker>
+     <view class='view-text'>
+        <text class='text'>{{comName}}</text>
+     </view>
+  </radio-group>
+
+  <button class="searchBtn" bindtap='searchBtn'>查询</button>
+
+  <scroll-view class="searchInfo" scroll-y="true">
+    <view wx:for="{{logisticsInfo}}" wx:key="true">
+      <text>{{item.datetime}} {{item.remark}}</text>
+    </view>
+  </scroll-view>
+
+</view>

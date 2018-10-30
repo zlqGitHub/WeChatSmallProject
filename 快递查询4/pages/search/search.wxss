@@ -1,0 +1,58 @@
+/* pages/search/search.wxss */rasdfafasfdasfdasfdafeasdfasfsaffggfsgafaf
+page{
+  background: #F0EFF4;
+}
+
+.writeDown{
+  margin: 5%;
+  padding: 15rpx;
+  border: 1px solid #3481EB;
+  background: #FFF;
+  border-radius: 20rpx;
+}
+
+.radio-group{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 5%;
+  /* justify-content:center; */
+}
+
+.radio{
+  width: 33.3%;
+  margin:20rpx 0;
+}
+
+.searchBtn{
+  background: #3481EB;
+  margin: 5%;
+  color:#FFF;
+}
+
+.searchInfo{
+  margin: 5%;
+  font-size: 30rpx;
+  height: 700rpx;
+  width: 90%;
+}
+
+.searchInfo view{
+  padding:20rpx;
+}
+
+
+
+.comBtn{
+  background: #3481EB;
+}
+
+.view-text{
+  margin: -2px 2%;
+  width: 110px;
+  border: 1px solid #FFF;
+  border-radius: 20rpx;
+  background: #FFF;
+  text-align: center;
+  line-height: 35px;
+}
