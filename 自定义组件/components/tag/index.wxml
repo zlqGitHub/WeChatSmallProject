@@ -1,0 +1,5 @@
+<!--components/tag/index.wxml-->
+<!--  style='{{style}}' 内部样式优先级高  -->
+<view class="moocba-tag {{ className }}" hover-class='moocba-tag--hover' bindtap='tagTab' style='{{style}}'>
+  <slot></slot>
+</view>

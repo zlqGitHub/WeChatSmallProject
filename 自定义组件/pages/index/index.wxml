@@ -3,10 +3,28 @@
 
 <custom-checkbox title="我是自定义组件"></custom-checkbox>
 
-<icon type="success" size="60" color="#ff00ff"></icon>
+<view>初级篇：</view>
+
+<icon type="success" size="40" color="#ff00ff"></icon>
 
 <custom-icon type='car' color="#0000ff" size="50"></custom-icon>
 
 <custom-icon type='close' color="#00aaff" size="50"></custom-icon>
 
 <custom-icon type='store' color="#ba00ff" size="50"></custom-icon>
+
+<view>中级篇：</view>
+
+<tag color="red">默认</tag>   <!--color为自定义组件的属性-->
+
+<tag color="pink">默认</tag>
+
+<tag color="#ff00ff">moocba</tag>
+
+<tag color="green">不可以</tag>
+
+<tag>tag</tag>
+
+<view>高级篇：</view>
+
+<view>实战篇：</view>

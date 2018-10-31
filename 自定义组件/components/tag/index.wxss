@@ -1,0 +1,34 @@
+/* components/tag/index.wxss */
+.moocba-tag{
+  font-family: "微软雅黑";
+  font-size: 24rpx;
+  height: 24rpx;
+  line-height: 24rpx;
+  margin: 10rpx;
+  padding: 4rpx 14rpx;
+  border: 2rpx solid #d9d9d9;
+  border-radius: 8rpx;
+  background-color: #f9f9f9;
+  opacity: 1;   /*透明度*/
+  display: inline-block;   /*块级+行级*/
+
+}
+
+.moocba-tag--hover{
+  opacity: .85;
+  background: #f5222d;
+}
+
+.moocba-tag--red{
+  color: #f5222d;
+  background: #fff1f0;
+  border-color: #ffa39e;
+}
+
+.moocba-tag--pink{
+  color: #eb2f96;
+  background: #fff0f6;
+  border-color: #ffadd2;
+}
+
+

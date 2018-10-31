@@ -1,6 +1,7 @@
 {
   "usingComponents":{
     "custom-checkbox":"/components/custom-checkbox/custom-checkbox",
-    "custom-icon":"/components/custom-icon/custom-icon"
+    "custom-icon":"/components/custom-icon/custom-icon",
+    "tag":"/components/tag/index"
   }
 }
