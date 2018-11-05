@@ -1,0 +1,74 @@
+<!--pages/order/order.wxml-->
+
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">联系人：</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="姓名"/>
+        </view>
+    </view>
+
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label"></view>
+        </view>
+        <view class="weui-cell__bd">
+          <view wx:for="{{sex}}" wx:key="true" data-value="{{item.value}}" 
+               class="weui-tag weui-tag--plain {{ item.checked ? 'weui-tag--primary' : '' }}" bindtap='sexTab'>
+               {{item.name}}
+          </view>
+           
+        </view>
+    </view>
+        <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">电话：</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入您的手机"/>
+        </view>
+    </view>
+        <view class="weui-cell weui-cell_input" bindtap='mapTab'>
+        <view class="weui-cell__hd position">
+            <view class="weui-label">小区/大厦/学校</view>
+        </view>
+        <view class="weui-cell__bd">
+            <textarea class="weui-input position-input" value='{{address}}'></textarea>
+            <image class="img" src='../../resources/images/position.png'></image>
+        </view>   
+    </view>
+
+        <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">补充信息：</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="如门牌号等" value='{{info}}'/>
+        </view>
+    </view>
+    
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label"></view>
+        </view>
+        <view class="weui-cell__bd">
+          <view class="weui-tag weui-tag--plain weui-tag--primary">家里</view>
+          <view class="weui-tag weui-tag--plain">学校</view>
+          <view class="weui-tag weui-tag--plain">公司</view>
+          <view class="weui-tag weui-tag--plain">住处</view>
+          <view class="weui-tag weui-tag--plain">其它</view>
+        </view>
+    </view>
+
+</view>
+
+    <view class="weui-flex">
+     <view class="weui-flex__item"><view class="placeholder">
+        <button class="weui-btn" type="warn">取消 </button>
+     </view></view>
+     <view class="weui-flex__item"><view class="placeholder">
+        <button class="weui-btn" type="primary" bindtap='saveTab'>保存 </button>
+     </view></view>
+    </view>

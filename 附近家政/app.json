@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/serve/serve",
+    "pages/order/order",
+    "pages/member/member"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0BB908",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "附近家政",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#0BB908",
+    "list": [
+      {
+        "pagePath": "pages/serve/serve",
+        "text": "服务下单",
+        "iconPath": "/resources/images/serve.png",
+        "selectedIconPath": "/resources/images/serveSelect.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单中心",
+        "iconPath": "/resources/images/order.png",
+        "selectedIconPath": "/resources/images/orderSelected.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "会员中心",
+        "iconPath": "/resources/images/my.png",
+        "selectedIconPath": "/resources/images/mySelected.png"
+      }
+    ]
+  }
+ 
+}

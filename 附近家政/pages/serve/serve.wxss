@@ -1,0 +1,47 @@
+/* pages/serve/serve.wxss */
+page{
+  background: #F5F5F5;
+}
+.slide-image{
+  height: 300rpx;
+  width: 750rpx;
+}
+.weui-cell__hd{
+  margin: 10rpx 20rpx;
+}
+.img{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;     /*垂直居中*/
+}
+.text{
+  line-height:60rpx;
+  font-size: 28rpx;
+}
+
+.weui-grids{
+  background: #fff;
+  border: none;
+}
+
+.weui-grid__icon{
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 30rpx;
+}
+.weui-grid__label{
+  font-size: 30rpx;
+}
+.weui-grid {
+  border-right: 2rpx solid #F5F5F5;
+  border-bottom: 2rpx solid #F5F5F5;
+}
+
+.kefu{
+  position: fixed;   /*固定定位*/
+  bottom: 40rpx;
+  right: 40rpx;
+  width: 70rpx;
+  height: 70rpx;
+}

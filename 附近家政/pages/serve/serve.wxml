@@ -1,0 +1,30 @@
+<!--pages/serve/serve.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+  <block wx:for="{{imgUrls}}" wx:key="true">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="weui-cell__hd">
+    <image class="img" src="../../resources/images/announce.png" />
+    <text class='text'>公告：激情世界杯，0元约家政。</text>
+</view>
+
+<view class="weui-grids"> 
+    <block wx:for="{{grids}}" wx:key="key"> 
+        <navigator url="../order/order" class="weui-grid" hover-class="weui-grid_active" open-type='switchTab'> 
+            <image class="weui-grid__icon" src="{{item.img}}" /> 
+            <view class="weui-grid__label">{{item.title}}</view> 
+        </navigator> 
+    </block> 
+</view>
+
+
+  <button open-type='contact'>    <!--打开客服会话-->
+    <image class='kefu' src='../../resources/images/kefu.png'/>
+  </button>
+
+
