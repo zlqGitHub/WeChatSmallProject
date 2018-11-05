@@ -1,0 +1,75 @@
+﻿<!--pages/wxFor/wxFor.wxml-->
+
+<view>五大洲：</view>
+
+<view wx:for="{{world}}" wx:key="true">{{index+1}}.{{item}}</view>
+
+
+
+<view>--------------------</view>
+
+
+<view>五大洲：</view>
+
+<view wx:for="{{world}}" wx:for-item="value" wx:for-index="key" wx:key="true">{{key+1}}.{{value}}</view>
+
+
+<view>--------------------</view>
+
+
+<view>五大洲：</view>
+
+
+<text wx:for="{{world}}" wx:key="true">{{index+1}}.{{item}}</text>
+
+<view>--------------------</view>
+
+
+
+<view>五大洲：</view>
+
+<view>
+  <block wx:for="{{world}}" wx:key="true">
+      <text>{{index+1}}.{{item}}</text>
+  </block>
+</view>
+
+
+<view>--------------------</view>
+
+<!-- 单层循环 -->
+
+
+<view>
+    <view wx:for="{{oneList}}" wx:key="true">
+      {{item.id}}.{{item.name}}{{item.age}}
+    </view>
+</view>
+
+
+
+<view>--------------------</view>
+
+<!-- 二层循环 -->
+
+<view>
+   
+
+ <view wx:for="{{twoList}}" wx:key="true">
+ 
+    
+ {{item.id}}.{{item.name}}{{item.age}}
+  
+   
+ <block wx:for="{{item.like}}" wx:for-item="like" wx:key="true">
+     
+
+     {{like}}
+    
+ 
+ </block>
+   
+
+ </view>
+
+</view>
