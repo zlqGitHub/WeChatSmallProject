@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简易计算机</title>
+	<style>
+		.container{
+			margin: 100px 200px;
+			width: 345px;
+			border: 1px solid #333;
+		}
+
+		.header,.show{
+			width: 345px;
+			border-style: solid;
+			border-color: #333;
+			border-width: 0px 0px 1px 0px;
+			box-sizing: border-box;
+		}
+
+		.header{
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			background: #eee;
+			letter-spacing: 10px;
+			font-size: 25px;
+			font-weight: 700;
+
+		}
+
+		.show input{
+			width: 341px;
+			height: 99px;
+			font-size: 20px;
+		}
+
+		button{
+			width: 80px;
+			height: 40px;
+			margin: 2px 0;
+			cursor: pointer;
+		}
+
+		.ac,.equal{
+			width: 168px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">简易计算机</div>
+		<div class="show" id="J_show">
+			<input type="text" id="J_text">
+			<!-- <input type="text" id="J_num1">
+			<input type="text" id="J_opreation">
+			<input type="text" id="J_num2"> -->
+		</div>
+
+		<div class="main" id="J_main">
+			<button type="button" class="ac" id="J_ac" value="AC">AC</button>
+			<button type="button" id="J_del" value="Del">Del</button>
+			<button type="button" id="J_division" value="/">/</button>
+			<button type="button" id="J_sever" value="7">7</button>
+			<button type="button" id="J_eight" value="8">8</button>
+			<button type="button" id="J_nine" value="9">9</button>
+			<button type="button" id="J_mul" value="*">*</button>
+			<button type="button" id="J_four" value="4">4</button>
+			<button type="button" id="J_five" value="5">5</button>		
+			<button type="button" id="J_six" value="6">6</button>
+			<button type="button" id="J_sub" value="-">-</button>
+			<button type="button" id="J_one" value="1">1</button>
+			<button type="button" id="J_two" value="2">2</button>
+			<button type="button" id="J_three" value="3">3</button>
+			<button type="button" id="J_sum" value="+">+</button>
+			<button type="button" id="J_zero" value="0">0</button>
+			<button type="button" id="J_spot" value=".">.</button>
+			<button type="button" class="equal" id="J_equal" value="=">=</button>
+			
+		</div>
+		<!-- <input type="text" id="J_num1">
+		<input type="text" id="J_opreation">
+		<input type="text" id="J_num2"> -->
+
+	</div>
+
+	<script>
+		var dur = 0;
+		var oShow = document.getElementById('J_show');
+		var oMain = document.getElementById('J_main');
+		// var oNum1 = document.getElementById('J_num1');
+		// var oOpreation = document.getElementById('J_opreation');
+		// var oNum2 = document.getElementById('J_num2');
+		var oText = document.getElementById('J_text');
+		var values;
+		var num1;
+		var num2="";
+		var opreation;
+		var aBtn = oMain.getElementsByTagName('button');
+
+		// alert(aBtn.length);
+		for(var i=0;i<aBtn.length;i++){
+			if(isNaN(parseFloat(aBtn[i].value))){
+			}
+			else{
+				aBtn[i].onclick=function(){
+					if(isNaN(oText.value)){
+						num2 = num2+this.value;
+					}
+
+					var a=oText.value;
+					oText.value=a+this.value;
+					
+				}
+			}
+		}
+
+
+		document.getElementById('J_ac').onclick=function(){
+			oText.value="";
+		}
+
+		document.getElementById('J_sum').onclick=function(){
+			var a=oText.value;
+			num1=parseFloat(a);
+			oText.value=a+this.value;
+			opreation=this.value;
+		}
+		document.getElementById('J_sub').onclick=function(){
+			var a=oText.value;
+			num1=parseFloat(a);
+			oText.value=a+this.value;
+			opreation=this.value;
+		}
+		document.getElementById('J_mul').onclick=function(){
+			var a=oText.value;
+			num1=parseFloat(a);
+			oText.value=a+this.value;
+			opreation=this.value;
+		}
+		document.getElementById('J_division').onclick=function(){
+			var a=oText.value;
+			num1=parseFloat(a);
+			oText.value=a+this.value;
+			opreation=this.value;
+		}
+		document.getElementById('J_spot').onclick=function(){
+			var a=oText.value;
+			oText.value=a+this.value;
+			num1=parseFloat(oText.value);
+
+			// opreation=this.value;
+		}
+
+		// document.getElementById('J_del').onclick=function(){
+		// 	var a=oText.value;
+		// 	oText.value=a+this.value;
+		// }
+		// 
+		document.getElementById('J_equal').onclick=function(){
+			// oText.value="";
+			var num0=parseFloat(num2);
+			switch(opreation){
+				case "+":
+					oText.value=num1+num0;
+					break;
+				case "-":
+					oText.value=num1-num0;
+					break;
+				case "*":
+					oText.value=num1*num0;
+					break;
+				case "/":
+					oText.value=num1/num0;
+					break;
+			}
+			// alert(num1);
+			// alert(num2);
+			num2="";
+
+		}
+
+	</script>
+	
+</body>
+</html>
