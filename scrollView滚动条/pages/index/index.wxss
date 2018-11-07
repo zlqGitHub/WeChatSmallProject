@@ -1,0 +1,35 @@
+/* pages/index/index.wxss */
+.scroll-y{
+  width:100%;
+  height: 200px;
+  margin-bottom: 20%;
+}
+.scroll-view-y{
+  width: 100%;
+  height: 200px;
+}
+.scroll-y-item{
+  width: 100%;
+  height: 80px;
+}
+
+.scroll-view-x{
+  height: 200px;
+  margin-bottom: 20%;
+  white-space: nowrap;   /*让子元素不换行 */
+}
+.scroll-x-item{
+  width: 50%;
+  height: 200px;
+  display: inline-block;    /* 给需要滑动的元素进行横向编排*/
+}
+
+.bgred{
+  background: red;
+}
+.bgyellow{
+  background: yellow;
+}
+.bggreen{
+  background: green;
+}

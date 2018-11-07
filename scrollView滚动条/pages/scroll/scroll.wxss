@@ -1,0 +1,32 @@
+/* pages/scroll/scroll.wxss */
+.scroll-view-y{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20%;
+}
+
+.scroll-view-time-y{
+  width: 100%;
+  height: 100px;
+}
+
+.scroll-view-x{
+  margin-top: 5%;
+  white-space: nowrap; /* 指定元素内的空白不换行 */
+}
+
+.scroll-view-time-x{
+  width: 50%;
+  height: 200px;
+  display: inline-block;/* 给需要滑动的元素进行一个横向编排 */
+}
+
+.bg_red{
+  background: red;
+}
+.bg_yellow{
+  background: yellow;
+}
+.bg_green{
+  background: green;
+}

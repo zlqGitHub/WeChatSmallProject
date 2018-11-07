@@ -1,0 +1,16 @@
+<!--pages/scroll/scroll.wxml-->
+<view class='view-y'>
+  <scroll-view class='scroll-view-y' scroll-y>
+    <view class='scroll-view-time-y bg_red'></view>
+    <view class='scroll-view-time-y bg_yellow'></view>
+    <view class='scroll-view-time-y bg_green'></view>
+  </scroll-view>
+</view>
+
+<view class='view-x'>
+  <scroll-view class='scroll-view-x' scroll-x>
+    <view class='scroll-view-time-x bg_red'></view>
+    <view class='scroll-view-time-x bg_yellow'></view>
+    <view class='scroll-view-time-x bg_green'></view>
+  </scroll-view>
+</view>

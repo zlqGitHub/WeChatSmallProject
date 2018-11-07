@@ -1,0 +1,15 @@
+<view class='scroll-y'>
+  <scroll-view class='scroll-view-y' scroll-y="true" scroll-top="50">   <!--scroll-y="true"Y轴方向滚动-->
+    <view class='scroll-y-item bgred'></view>
+    <view class='scroll-y-item bgyellow'></view>
+    <view class='scroll-y-item bggreen'></view>
+  </scroll-view>
+</view>
+
+<view class='scroll-x'>
+  <scroll-view class='scroll-view-x' scroll-x scroll-left="80">  <!--scroll-x="true"横向滚动-->
+    <view class='scroll-x-item bgred'></view>
+    <view class='scroll-x-item bgyellow'></view>
+    <view class='scroll-x-item bggreen'></view>
+  </scroll-view>
+</view>
