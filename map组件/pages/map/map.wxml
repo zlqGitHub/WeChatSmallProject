@@ -1,0 +1,11 @@
+<map
+  class='map'
+  latitude='{{latitude}}'
+  longitude='{{longitude}}'
+  scale='{{scale}}'
+  circles='{{circles}}'
+  markers='{{markers}}'
+  
+>
+
+</map>

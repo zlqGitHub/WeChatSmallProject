@@ -1,0 +1,21 @@
+/* pages/imgBg/imgBg.wxss */
+
+.container{
+  width: 750rpx;
+  height: 1200rpx;
+  position: fixed;
+}
+.container-item{
+  position: absolute;
+  right: 20rpx;
+}
+.changeBg{
+  bottom: 180rpx;
+}
+.clearBg{
+  bottom: 100rpx;
+}
+
+.shareBg{
+  bottom: 20rpx;
+}

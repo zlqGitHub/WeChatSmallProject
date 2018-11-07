@@ -1,0 +1,11 @@
+
+  <button class="btn" type="primary" bindtap="bindTab">Map 组件</button>
+
+  <button class="btn" type="primary" bindgetuserinfo="getUserInfo" open-type="getUserInfo">Map 案例</button>
+
+  <button class="btn" type="primary" bindtap="bindCurrentPosition">获取当前位置</button>
+
+  <button class="btn" type="primary" bindtap="bindChoosePosition">选择位置</button>
+
+  <button class="btn" type="primary" bindtap="imgBg">切换背景</button>
+

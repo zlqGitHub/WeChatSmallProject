@@ -1,0 +1,2 @@
+
+  <button class="btn" type="primary" bindgetuserinfo="bindTab" open-type="getUserInfo">是否授权</button>

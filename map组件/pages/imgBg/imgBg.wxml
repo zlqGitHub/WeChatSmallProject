@@ -1,0 +1,15 @@
+<!--pages/imgBg/imgBg.wxml-->
+<view class='container' style='background-image: url({{imgBgUrl}});background-size: 750rpx 100%;background-repeat:no-repeat;'>
+  <button type='primary' size='mini' class='changeBg container-item' bindtap='changeBg'>
+    CHANGEBG
+  </button>
+
+
+  <button type='primary' size='mini' class='clearBg container-item'  bindtap='clearBg'>
+    CLEARBG
+  </button>
+
+  <button type='primary' size='mini' class='shareBg container-item'  bindtap='shareBg' open-type='share'>
+    SHAREBG
+  </button>
+</view>
