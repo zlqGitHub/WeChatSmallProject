@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/book/book",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00B26A",
+    "navigationBarTitleText": "我的书架",
+    "navigationBarTextStyle": "black"
+  }
+}

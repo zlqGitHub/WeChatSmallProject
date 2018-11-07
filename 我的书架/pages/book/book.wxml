@@ -1,0 +1,58 @@
+<!--pages/book/book.wxml-->
+<view class="index-profile">
+  <open-data type="userAvatarUrl" class="index-profile__img"></open-data>
+</view>
+  <view class="index-title">
+  <open-data type="userNickName">：</open-data>  <!--open-data组件中开放能力-->
+  {{ title }}
+</view>
+     
+<view class='bookContainer'>
+   <checkbox-group class='checkbox' bindchange='checkboxTab'>
+    <!-- 需要使用 wx:key 来指定列表中项目的唯一的标识符. wx:key 的值以两种形式提供字符串，代表在 for 循环的 array 中 item 的某个 property，该 property 的值需要是列表中唯一的字符串或数字，且不能动态改变。
+保留关键字 *this 代表在 for 循环中的 item 本身，这种表示需要 item 本身是一个唯一的字符串或者数字，如：
+当数据改变触发渲染层重新渲染的时候，会校正带有 key 的组件，框架会确保他们被重新排序，而不是重新创建，以确保使组件保持自身的状态，并且提高列表渲染时的效率。 -->
+      <view class='book' wx:for="{{bookList}}" wx:key="id"> 
+          <!-- <view>
+              <checkbox value="{{item.id}}"  />
+           </view> -->
+           <!-- index为数组的索引 -->
+          <view style='padding-left:9px;'>{{index+1}}、</view>
+          <view wx:if="{{!item.isEditing}}">
+              <input class='bookShow1' value='{{item.bookName}}' disabled/>
+          </view> 
+          <view wx:else>
+              <input class='bookShow2' value='{{item.bookName}}' bindinput='editInput'/>
+          </view> 
+          <view class='miniTab'>
+          <!-- 传参:data-index将索引值传到js页面，data-id将id唯一标识符传过去 -->
+              <button size='mini' type='primary' class='opreation' bindtap="{{ item.isEditing ? 'saveBookTab' : 'bookEditingTab' }}" data-index="{{index}}" data-id='{{item.id}}'>
+               {{ item.isEditing ? "保存" : " 编辑" }}
+              </button>
+              <button size='mini' type='warn' class='opreation' bindtap='deleteTab' data-id='{{item.id}}'>删除</button>
+          </view>
+            <!-- value将点击了书目的id传过去 -->
+            <checkbox value='{{item.id}}'></checkbox>
+        
+      </view>
+  </checkbox-group>
+  
+</view>
+
+
+<input type='text' class='bookNameInput' placeholder='我的床头书' bindinput='bookNameInput' value='{{bookName}}'></input>
+
+
+<button  type='primary' class='addbook' bindtap='addTab'>ADDBOOK</button>
+<view class="weui-flex">
+    <view class="weui-flex__item" hidden='{{ checkedList.length==0 ? true : false }}'>
+      <view class="placeholder">
+       <button type='warn' class='clear' bindtap='clearSelectedTab'>CLEARSELECT</button>
+     </view>
+    </view>
+    <view class="weui-flex__item">
+      <view class="placeholder">
+        <button type='warn' class='clear' bindtap='clearAllTab'>CLEARALL</button>
+      </view>
+    </view>
+</view>

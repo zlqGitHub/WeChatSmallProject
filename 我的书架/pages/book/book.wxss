@@ -1,0 +1,71 @@
+/* pages/book/book.wxss */
+
+.index-profile {
+  width: 80%;
+  margin: 100rpx auto 60rpx auto;
+}
+
+.index-profile__img {
+  display: block;
+  border-radius: 20%;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;      /*内容会被修剪，并且其余内容是不可见的*/
+}
+.index-title {
+  font-size: 60rpx;
+  font-weight: 800;
+  text-align: center;
+}
+.bookContainer{
+  margin: 20rpx -20rpx;
+}
+.book{
+  display: flex;
+  flex-flow: row wrap;
+  height: 100rpx;
+  /* background: pink; */
+  align-items: center;
+  margin-left: 20rpx;
+}
+.bookShow1,.bookShow2{
+  margin-right: 10rpx;
+  height: 60rpx;
+  width: 320rpx;
+  border-radius: 10rpx;
+  padding-left: 10rpx;
+}
+.bookShow2{
+  border: 2rpx solid #00B26A;
+}
+.opreation{
+  margin: 0 10rpx;
+  margin-bottom: -10rpx;
+}
+.bookNameInput{
+  border:1px solid #00B26A;
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  margin: 20rpx 5%;
+  padding-left: 20rpx;
+}
+.addbook{
+  margin-top: 40rpx;
+  width: 90%;
+  height: 80rpx;
+}
+.clear{
+  margin: 34rpx;
+  width: 300rpx;
+  height: 80rpx;
+}
+
+.checkbox{
+  margin-top: -10rpx;
+  margin-left: 10rpx;
+}
