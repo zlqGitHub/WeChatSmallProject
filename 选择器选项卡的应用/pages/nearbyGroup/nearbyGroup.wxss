@@ -1,0 +1,132 @@
+/* pages/nearbyGroup/nearbyGroup.wxss */
+page{
+  background: #F3F3F3;
+  position: fixed;
+}
+swiper{
+  width: 100%;
+  height: 300rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.slide-image{
+  width: 750rpx;
+}
+.icon{
+  height: 40rpx;
+  position: relative;
+  margin-top: 300rpx;
+}
+.notice{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 0 5rpx;
+}
+.text{
+  position: relative;
+  top: -12rpx;
+  color: #707070;
+  margin: 0 5rpx;
+  font-size: 28rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.container{
+  background: #FFF;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.left{
+  /* float: left; */
+  width: 140rpx;
+  height: 1300rpx;
+}
+.leftColumn{
+  width: 140rpx;
+  height: 100rpx;
+  /* background: green; */
+  text-align: center;
+  line-height: 100rpx;
+  border-bottom: 1px solid #999;
+  box-sizing: border-box;
+}
+.right{
+  width: 1190rpx;
+  height: 1300rpx;
+  border-left: 1px solid #999;
+  font-size: 28rpx;
+}
+
+.rightContent{
+  width: 100%;
+  border-top:1px solid #999;
+  border-bottom:1px solid #999;
+  margin-bottom: 20rpx;
+}
+.userInfo{
+  width: 100%;
+  height: 80rpx;
+}
+.userInfo view{
+  float:left;
+}
+.headerImg{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin: 10rpx 45rpx;
+}
+.nickName text{
+  margin-left: 20rpx;
+  line-height: 80rpx;
+}
+.ditails{
+  position: relative;
+  width: 100%;
+  height: 50rpx;
+}
+.ditails_bottom{
+  margin-bottom: 130rpx;
+}
+.ditails_Content{
+  position: absolute;
+  left: 10rpx;
+  top: 7rpx;
+}
+.showInfo{
+  position: absolute;
+  right: 65rpx;
+  width: 380rpx;
+  height: 50rpx;
+}
+
+.textarea{
+  width: 400rpx;
+  height: 170rpx;
+  margin-left: 160rpx;
+  /* border: 1px solid #000; */
+  border-radius: 10rpx;
+  text-align:justify;
+}
+.groupTextarea{
+  margin:6rpx;
+  width: 390rpx;
+  height: 150rpx;
+  line-height: 50rpx;
+  padding: 1rpx;
+  }
+
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    height: 2.3em;
+    line-height: 2.3em;
+}
+.placeholder_item{
+  color: #FFF;
+  background-color: #FF7835;
+}

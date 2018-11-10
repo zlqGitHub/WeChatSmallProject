@@ -1,0 +1,44 @@
+/* pages/index/index.wxss */
+page{
+  background: #F3F3F3;
+}
+.slide-image{
+  width: 750rpx;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+.weui-navbar__item.weui-bar__item_on {
+  color:#FF7835;
+}
+
+.weui-navbar__slider{
+  background-color: #FF7835;
+}
+.group{
+  position: fixed;
+  width: 100%;
+  height: 960rpx;
+  margin: -3rpx 55rpx;
+}
+.group_text{
+  position: absolute;
+  top: 30rpx;
+  left: 90rpx;
+  color:#2FA79B;
+}
+.weui-tab__content_item{
+  width: 220rpx;
+  margin-bottom: 10rpx;
+  background-color: #B3E85F;
+  color: #FFF;
+  margin-left: 200rpx;
+}
+.navigation{
+  position: fixed;
+  bottom: 30rpx;
+  right: 30rpx;
+  width: 80rpx;
+  height: 80rpx;
+}

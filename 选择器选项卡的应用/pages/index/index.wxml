@@ -1,0 +1,32 @@
+<!--pages/index/index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="true">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="weui-tab">
+    <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+            <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                <view class="weui-navbar__title">{{item}}</view>
+            </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+    </view>
+
+    <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">选项一的内容</view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
+        <view class="weui-tab__content group" hidden="{{activeIndex != 2}}">
+            <text class='group_text'>用行动证明自己就好，加油 ！</text>
+            <button class='weui-tab__content_item' bindgetuserinfo='startGroup' open-type='getUserInfo'>发起拼团</button>
+            <button class='weui-tab__content_item' bindtap='nearbyGroup'>附近的团</button>
+            <image class='navigation' src='../../resource/images/nav.png' bindtap='navigation'></image>
+
+        </view>
+    </view>
+</view>

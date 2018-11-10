@@ -1,0 +1,78 @@
+<!--pages/nearbyGroup/nearbyGroup.wxml-->
+<view  class='swiper'>
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="true">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class='icon'>
+  <image class='notice' src='../../resource/images/notice2.png'/>
+  <text class='text'>附近拼团更新啦！！！</text>
+</view> 
+<view class='container'>
+  <view class='left'>
+    <scroll-view scroll-y style="height: 870rpx;">
+      <block wx:for='{{groupType}}' wx:key='true'>
+        <view class='leftColumn' data-index="{{index}}" bindtap='chooseGroup' style="color:{{index == currentIndex ? color : ''}};">{{item}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class='right'>
+    <view class='groups'>
+      <scroll-view scroll-y style="height: 870rpx;">
+        <view class='rightContent' wx:for="{{groups[currentIndex]}}" wx:key="true">
+        <view class='userInfo'>
+          <view><image class='headerImg' src='{{item.headerImg}}'/></view>
+          <view class='nickName'><text>{{item.nickName}}</text></view>
+        </view>
+        <view class='ditails'>
+          <text class='ditails_Content'>集合时间：</text>
+          <input class='showInfo' value='{{item.time}}' disabled='true'/>
+        </view>
+        <view class='ditails'>
+          <text class='ditails_Content'>集合地点：</text>
+          <input class='showInfo' value='{{item.address}}' disabled='true'/>
+        </view>
+        <view class='ditails'>
+          <text class='ditails_Content'>人数要求：</text>
+          <input class='showInfo' value='{{item.peopleNum}}个' disabled='true'/>
+        </view>
+        <view class='ditails ditails_bottom'>
+          <text class='ditails_Content'>团队详情：</text>
+          <view class="textarea">
+            <scroll-view scroll-y class='groupTextarea'>
+              <text>{{item.detail}}</text>
+            </scroll-view>
+          </view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item">
+              <view class="placeholder">
+              <button class='placeholder_item' size='mini'>咨询</button>
+              </view>
+            </view>
+            <view class="weui-flex__item">
+              <view class="placeholder">
+                <button class='placeholder_item' size='mini' open-type='getUserInfo' bindgetuserinfo='addGroup'>加入</button>
+              </view>
+            </view>
+            <view class="weui-flex__item">
+              <view class="placeholder">
+                <button class='placeholder_item' size='mini' open-type='share'>分享</button>
+              </view>
+            </view>
+        </view>
+        
+
+      </view>
+      
+      </scroll-view>
+
+    </view>
+  </view>
+</view>
+

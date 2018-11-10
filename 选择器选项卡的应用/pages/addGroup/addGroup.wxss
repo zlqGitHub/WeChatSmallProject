@@ -1,0 +1,99 @@
+/* pages/addGroup/addGroup.wxss */
+.container{
+  width: 90%;
+  height: 390rpx;
+  border: 1px solid #000;
+  margin:5%;
+  font-size: 28rpx;
+  position: relative;
+}
+.userInfo view{
+  float:left;
+}
+.headerImg{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin: 10rpx 20rpx;
+}
+.number{
+  margin-left: 200rpx;
+}
+.nickName text,.number text{
+  margin-left: 10rpx;
+  line-height: 80rpx;
+}
+
+.ditails{
+  position: relative;
+  left: 10rpx;
+  top: 90rpx;
+  height: 50rpx;
+}
+.ditails_bottom{
+  margin-bottom: 240rpx;
+}
+.ditails_Content{
+  position: absolute;
+  left: 10rpx;
+  top: 10rpx;
+}
+
+.textarea{
+  width: 480rpx;
+  height: 160rpx;
+  margin: 10rpx 150rpx;
+  border: 1px solid #000;
+  border-radius: 10rpx;
+  text-align:justify;
+}
+.groupTextarea{
+  margin:5rpx 10rpx;
+  width: 480rpx;
+  height: 160rpx;
+  line-height: 50rpx;
+}
+
+
+.score{
+  width: 200rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  position: absolute;
+  top:300rpx;
+  left: 20rpx;
+}
+.scoreInput{
+  width: 100rpx;
+  height: 50rpx;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  top:-50rpx;
+  left: 80rpx;
+}
+.placeholder{
+  padding: 0 10px;
+  text-align: center;
+  height: 2.3em;
+  line-height: 2.3em;
+}
+.placeholder input{
+  width: 50rpx;
+  height: 35rpx;
+  border: 1px solid #000;
+}
+.weui-flex__item .zixun{
+  margin-right: -350rpx;
+}
+.weui-flex__item .yuyue{
+  margin-right: -190rpx;
+} 
+.weui-flex__item .jubao{
+  margin-right: -30rpx;
+} 
+.placeholder_item{
+  color: #FFF;
+  background-color: #FF7835;
+}

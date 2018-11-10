@@ -1,0 +1,34 @@
+<!--pages/addGroup/addGroup.wxml-->
+<view class='container'>
+  <view class='userInfo'>
+    <view><image class='headerImg' src='{{headerImg}}'/></view>
+    <view class='nickName'><text>{{nickName}}</text></view>
+    <view class='number'><text>成交量：{{number}}</text></view>
+  </view>
+  <view class='ditails ditails_bottom'>
+    <text class='ditails_Content'>个人简介：</text>
+    <view class="textarea">
+      <textarea class='groupTextarea'/>
+    </view>
+  </view>
+  <view class='score'>
+    评分：<input class='scoreInput'/>
+  </view>
+  <view class="weui-flex">
+    <view class="weui-flex__item">
+      <view class="placeholder zixun">
+        <button class='placeholder_item' size='mini' open-type='contact' bindcontact='contactTab'>咨询</button>
+      </view>
+    </view>
+    <view class="weui-flex__item">
+      <view class="placeholder yuyue">
+        <button class='placeholder_item' size='mini' bindtap='appointment'>预约</button>
+      </view>
+    </view>
+    <view class="weui-flex__item">
+      <view class="placeholder jubao">
+        <button class='placeholder_item' size='mini'>举报</button>
+      </view>
+    </view>
+  </view>
+</view>

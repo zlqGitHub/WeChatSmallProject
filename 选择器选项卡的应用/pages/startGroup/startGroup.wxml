@@ -1,0 +1,88 @@
+<!--pages/startGroup/startGroup.wxml-->
+<view class='container'>
+  <scroll-view class="scroll-view_x" scroll-x>
+     <block wx:for="{{ groupType }}" wx:key="true">
+        <view class="scroll-view_x-item"  data-cate="{{item}}" data-index='{{index}}' bindtap="categoryChange">
+          <view class="scroll-view_x-item__title {{ activeCategory == item ? 'active-border-bottom' : ''}}">{{ item }}</view>
+        </view>
+        </block>
+  </scroll-view>
+
+  <swiper class='swiper'>
+    <swiper-item>
+      <image src="{{imgUrls[index]}}" class="slide-image"/>
+    </swiper-item>
+</swiper>
+
+<!--  头像
+   <view class='bottomContent'>
+    <view class='userInfo'>
+      <view><image class='headerImg' src='{{headerImg}}'/></view>
+      <view class='nickName'><text>{{nickName}}</text></view>
+    </view>
+  
+  </view> -->
+
+  <view class="weui-form-preview">
+    <view class="weui-form-preview__hd">
+      <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">趣味拼团：</view>
+          <view class="weui-form-preview__value_in-hd">
+            <input class='groupInput' value='{{activeCategory}}' disabled='true'/>
+          </view>
+      </view>
+    </view>
+        <view class="weui-form-preview__hd">
+      <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">拼团人数：</view>
+          <view class="weui-form-preview__value_in-hd">
+             <picker class='peopleNum' bindchange="bindPickerChange" value="{{peopleIndex}}" range="{{peopleNum}}" mode='selector'>
+              <view class="picker">
+                {{peopleNum[peopleIndex]}} 个
+              </view>
+            </picker>
+          </view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-form-preview__hd">
+      <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">集合时间：</view>
+          <view class="weui-form-preview__value_in-hd">
+            <picker class='chooseDate' mode="date" value="{{date}}" start="2018-01-01" end="2019-12-31" bindchange="bindDateChange">
+              <view class="picker">
+                {{date}}
+              </view>
+            </picker>
+            <picker class='chooseTime' mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+             <view class="picker">
+                {{time}}
+              </view>
+            </picker>
+          </view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-form-preview__hd">
+      <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">集合地点：</view>
+          <view class="weui-form-preview__value_in-hd">
+            <input class='groupInput'/>
+          </view>
+      </view>
+      <!-- <view class="weui-cell__ft weui-cell__ft_in-access"></view> -->
+    </view>
+     <view class="weui-form-preview__hd">
+      <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">团队详情：</view>
+      </view>
+      <view class="textarea">
+            <textarea class='groupTextarea'/>
+      </view>    
+    </view>
+  </view>
+
+  <button class="startGroup" bindtap='submitTab'>发起拼团</button>
+
+</view>
+

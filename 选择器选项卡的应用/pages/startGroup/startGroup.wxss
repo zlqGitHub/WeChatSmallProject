@@ -1,0 +1,99 @@
+/* pages/startGroup/startGroup.wxss */
+.scroll-view_x{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100rpx;
+  background: #FF7835;
+  white-space: nowrap;   
+}
+.scroll-view_x-item{
+  display: inline-block;
+  padding: 0 20rpx;
+}
+.scroll-view_x-item__title{
+  color: #FFF;
+  font-size: 30rpx;
+  line-height: 70rpx;
+}
+.active-border-bottom{
+  border-bottom: 4rpx solid #FFF;
+}
+
+.swiper{
+  position: relative;
+  margin-top: 100rpx;
+}
+.slide-image{
+  width: 750rpx;
+}
+
+.weui-form-preview__label{
+  color: #000;
+}
+.peopleNum,.groupInput{
+  height:95rpx;
+  line-height: 95rpx;
+  font-size: 36rpx;
+  font-weight: 400;
+  padding-right: 35rpx;
+}
+.chooseDate{position:relative;width: 200rpx;right: -90rpx;}
+.chooseTime{position:relative;width:100rpx;right: -95rpx;}
+
+.chooseDate,.chooseTime{
+  display: block;
+  float: left;
+  height:95rpx;
+  line-height: 95rpx;
+  font-size: 36rpx;
+  font-weight: 400;
+  padding-right: 35rpx;
+}
+.weui-cell__ft{
+  position: relative;
+  top:-45rpx;
+}
+.textarea{
+  width: 96%;
+  height: 200rpx;
+  margin: 10rpx 2%;
+  border: 1px solid #000;
+  border-radius: 10rpx;
+  text-align:justify;
+}
+.groupTextarea{
+  margin:15rpx;
+  height: 180rpx;
+  line-height: 60rpx;
+}
+
+.startGroup{
+  background-color: red;
+  color: #FFF;
+  width: 90%;
+  margin: 5%;
+}
+
+
+/* 
+.userInfo{
+  width: 100%;
+  height: 150rpx;
+  background: red; 
+}
+.userInfo view{
+  float:left;
+}
+.headerImg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin: 25rpx 20rpx;
+}
+.nickName text{
+  margin-left: 20rpx;
+  line-height: 150rpx;
+} */

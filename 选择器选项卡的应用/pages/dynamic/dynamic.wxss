@@ -1,0 +1,4 @@
+/* pages/dynamic/dynamic.wxss */
+.slide-image{
+  width: 750rpx;
+}

@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/dynamic/dynamic",
+    "pages/sportsMall/sportsMall",
+    "pages/my/my",
+    "pages/startGroup/startGroup",
+    "pages/nearbyGroup/nearbyGroup",
+    "pages/addGroup/addGroup",
+    "pages/appointment/appointment"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FF7835",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#FF7835",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "resource/images/0.png",
+        "selectedIconPath": "resource/images/0_selected.png"
+      },
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "text": "动态",
+        "iconPath": "resource/images/1.png",
+        "selectedIconPath": "resource/images/1_selected.png"
+      },
+      {
+        "pagePath": "pages/sportsMall/sportsMall",
+        "text": "运动商城",
+        "iconPath": "resource/images/2.png",
+        "selectedIconPath": "resource/images/2_selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "resource/images/3.png",
+        "selectedIconPath": "resource/images/3_selected.png"
+      }
+    ]
+  }
+}
