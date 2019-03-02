@@ -1,0 +1,85 @@
+/* pages/cBuildDetails/cBuildDetails.wxss */
+.top{
+  width: 100%;
+  height: 200rpx;
+  background: #EFF0F2;
+  border-bottom: 5rpx solid #E3E3E3;
+}
+.header{
+  width: 100%;
+  height: 115rpx;
+  /* background: #ccc; */
+}
+.tip{
+  float: left;
+  font-size: 35rpx;
+  /* color: #FFF; */
+  margin: 30rpx 0 30rpx 30rpx;
+}
+.progress{
+  width: 380rpx;
+  position: relative;
+  top: 30rpx;
+  left: 0;
+}
+
+.floor{
+  font-size: 35rpx;
+  margin-left: 30rpx;
+}
+.floor_tip{
+  display: inline-block;
+  width: 120rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  padding-left: 15rpx;
+  border: 1rpx solid #999;
+}
+.bottomImg{
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  top: 13rpx;
+  left: -45rpx;
+}
+.text{
+  display: inline-block;
+  width: 100%;
+  height: 82rpx;
+  line-height: 82rpx;
+  font-size: 32rpx;
+  padding-left: 34rpx;
+  color: #BABCBB;
+  border-bottom: 1rpx solid #BABCBB;
+}
+.cRoom{
+  width: 100%;
+  height: auto;
+}
+.content{
+  width: 96%;
+  float: right;
+}
+.weui-media-box__title{
+  margin: 24rpx 0 15rpx 0;
+}
+.weui-media-box__desc{
+  margin-bottom: 24rpx;
+  font-size: 32rpx;
+  color: #BABCBB;
+}
+.scale{
+  font: 28rpx;
+  position: relative;
+  right: -80rpx;
+}
+.weui-cell{
+  border-bottom: 1rpx solid #BABCBB;
+}
+.weui-cell_link{
+  font-size: 32rpx;
+}
+
+
+
+

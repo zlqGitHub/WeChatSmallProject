@@ -1,0 +1,15 @@
+/* pages/myLove/myLove.wxss */
+page{
+  background: black;
+}
+p{
+  display: block;
+  color: #FFF;
+  font-size: 60rpx;
+  font-weight: 700;
+  position: relative;
+  top: 340rpx;
+  left: 50%;
+  margin-left: -120rpx;
+  margin-bottom: -20rpx;
+}

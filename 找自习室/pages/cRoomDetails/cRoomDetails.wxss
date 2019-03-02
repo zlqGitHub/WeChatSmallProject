@@ -1,0 +1,51 @@
+/* pages/cRoomDetails/cRoomDetails.wxss */
+.notice{
+  width: 100%;
+  height: 50rpx;
+  background: #FEFDEB;
+  position: relative;
+}
+.noticeImg{
+  width: 32rpx;
+  height: 32rpx;
+  padding-left: 10rpx;
+  position: absolute;
+  top: 9rpx;
+}
+.noticeContent{
+  color: #ED6B22;
+  font-size: 32rpx;
+  padding-left: 55rpx;
+  position: absolute;
+  top: 2rpx;
+}
+.schedule{
+  width: 100%;
+  height: 1000rpx;
+}
+.feedback{
+  width: 80rpx;
+  height: 80rpx;
+  z-index: 100;
+  position: fixed;
+  bottom: 255rpx;
+  right: 28rpx;
+}
+.collection{
+  width: 80rpx;
+  height: 80rpx;
+  z-index: 100;
+  position: fixed;
+  bottom: 175rpx;
+  right: 28rpx;
+}
+.location{
+  width: 60rpx;
+  height: 55rpx;
+  margin: 20rpx 15rpx;
+  float: left;
+}
+.cInfo{
+  display: inline-block;
+  margin-top: 20rpx;
+}

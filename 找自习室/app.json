@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/notice/notice",
+    "pages/noticeDetail/noticeDetail",
+    "pages/cBuild/cBuild",
+    "pages/cBuildDetails/cBuildDetails",
+    "pages/cRoomDetails/cRoomDetails",
+    "pages/feedback/feedback",
+    "pages/myLove/myLove"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#45AA68",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  }
+}

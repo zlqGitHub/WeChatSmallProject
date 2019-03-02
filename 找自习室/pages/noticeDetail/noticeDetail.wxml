@@ -1,0 +1,6 @@
+<!--pages/noticeDetail/noticeDetail.wxml-->
+<text class='title'>{{notice[0].title}}</text>
+<span class="time">{{notice[0].time}}</span>
+<view class='content'>
+  详情：{{notice[0].content}}
+</view>

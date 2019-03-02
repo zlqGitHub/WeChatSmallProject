@@ -1,0 +1,51 @@
+/* pages/cBuild/cBuild.wxss */
+page{
+  background: #F3F4F6;
+}
+.container{
+  width:100%;
+  height:auto;
+  margin: 10rpx auto;
+}
+.empty{
+  display: block;
+  width: 440rpx;
+  height: 260rpx;
+  position: relative;
+  top: 170rpx;
+  left: 155rpx;
+  margin-bottom: 180rpx;
+}
+
+.weui-panel{
+  width: 93%;
+  background-color:#F3F4F6;
+
+  margin: auto;
+}
+.weui-panel__hd{
+  background-color:#FFF;
+  margin-top: 10rpx;
+  border: none
+}
+.weui-panel__bd{
+  background-color:#FFF;
+  margin-bottom: 10rpx;
+  border: none
+}
+.nav{
+  text-align: center;
+}
+.navImg{
+  width: 40rpx;
+  height: 40rpx;
+  margin-bottom: -5rpx;
+}
+.go{
+  display: block;
+  font-size: 26rpx;
+  margin-top: -5px;
+}
+.weui-media-box__hd_in-appmsg {
+  width: 165rpx;
+}

@@ -1,0 +1,16 @@
+.title{
+  display: inline-block;
+  padding: 60rpx 0 40rpx 35rpx;
+  font-size: 32rpx;
+}
+.time{
+  display: block;
+  color: #929292;
+  font-size: 26rpx;
+  padding: 0 0 40rpx 35rpx;
+}
+.content{
+  font-size: 28rpx;
+  padding: 0 40rpx;
+  line-height: 55rpx;
+}

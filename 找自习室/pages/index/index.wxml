@@ -1,0 +1,69 @@
+<!-- 顶部信息 -->
+<view class='header'>
+  <p class="name">找教室</p>
+  <p class="tip">查教室、找教室、上中北二龙山</p>
+
+  <!-- 搜索框 -->
+<view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+            <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                <icon type="clear" size="14"></icon>
+            </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+            <icon class="weui-icon-search" type="search" size="14"></icon>
+            <view class="weui-search-bar__text">请输入教室编号</view>
+        </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+  </view>
+</view>
+
+<!-- 中间内容 -->
+<view class='container'>
+  <view class='courses' wx:if="{{cRooms!=''}}">
+    <!-- 推荐教室信息 -->
+      <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd">最优推荐：</view>
+        <view wx:for="{{cRooms}}" wx:key="true">
+          <view class="weui-panel__bd">
+            <navigator url="../cRoomDetails/cRoomDetails?no={{cRooms[index].no}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="{{cRooms[index].img}}" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">{{cRooms[index].name}} :{{cRooms[index].no}}</view>                  
+                    <view class="weui-media-box__desc">无课时间：{{cRooms[index].time}}</view>
+                </view>
+                <!-- 注意：catchtap点击事件在小程序中可以阻止冒泡 -->
+                <!-- <image class='collection' data-no='{{cRooms[index].no}}' catchtap='collecBtn' src='../../resources/images/collection.png'></image> -->
+            </navigator>
+            
+          </view>
+        </view>
+        
+      </view>  
+      <view class="weui-loadmore weui-loadmore_line"> 
+        <view class="weui-loadmore__tips weui-loadmore__tips_in-line">没有更多了~~~</view> 
+      </view>
+  </view>
+   <view class='noCourses' wx:else>
+    <image class='empty' src='../../resources/images/empty.jpg'></image>
+    <p class='p1'>尚未找到教室信息</p>
+    <p class='p2'>请重新<text>[输入教室编号]</text>查询别的教室吧</p>
+  </view>
+</view>
+
+
+<!-- 底部超链接 -->
+<view class="weui-grids"> 
+    <block wx:for="{{names}}" wx:key="*this"> 
+        <navigator url="{{navigates[index]}}" class="weui-grid" hover-class="weui-grid_active"> 
+            <image class="weui-grid__icon" src="../../resources/images/{{index}}.png" /> 
+            <view class="weui-grid__label">{{names[index]}}</view> 
+        </navigator> 
+    </block> 
+</view>

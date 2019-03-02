@@ -1,0 +1,12 @@
+<view class='notice'>
+  <image class='noticeImg' src='../../resources/images/notice.png'></image>
+  <p class="noticeContent">{{cRoom[0].notice}}</p>
+</view>
+<image class="schedule" src="{{cRoom[0].schedule}}"></image>
+<!-- 反馈、收藏按钮图片 -->
+<image class='feedback' data-no='{{cRoom[0].no}}' bindtap='feedbackBtn' src='../../resources/images/feedback.png'></image>
+<image class='collection' data-no='{{cRoom[0].no}}' bindtap='collecBtn' src='{{collect}}'></image>
+
+<!-- 底部信息 -->
+<image class='location' src='../../resources/images/location.png'></image>
+<p class="cInfo">{{cRoom[0].area}}{{cRoom[0].name}} {{cRoom[0].no}}</p>

@@ -1,0 +1,46 @@
+<view class='top'>
+  <view class='header'>
+    <p class="tip">实验大楼已占：</p>
+    <progress class='progress' backgroundColor='#ccd' percent="70" color="red" border-radius="100rpx" stroke-width="13" show-info />
+  </view>
+  <!-- 楼层 -->
+  <view class='floor'>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：<p class="floor_tip">{{array[index]}}</p>
+      <image class='bottomImg' src='../../resources/images/bottom.png'></image>
+    </view>
+    </picker>
+  </view>
+
+</view>
+
+<text class='text'>楼层教室如下：</text>
+<!-- 楼层教室 -->
+<view class='cRooms'>
+  <view class='cRoom'>
+    <view class='content'>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">
+          09402
+        </view>                   
+        <view class="weui-media-box__desc">
+          无课时间：2019-3-2 19:00-21:35
+          <p class="scale">506/230</p>  
+        </view>
+      </view>
+    </view>
+    <!-- catchtap可以取消事件冒泡 -->
+    <navigator url='../cRoomDetails/cRoomDetails' data-no='' catchtap='navBtn'>
+      <view class="weui-cell weui-cell_access weui-cell_link">
+          <view class="weui-cell__bd">查看更多</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+    </navigator>
+  </view> 
+  
+
+</view>
+
+
+

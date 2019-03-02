@@ -1,0 +1,6 @@
+<p class="title" disabled>{{no}} 教室反馈信息：</p>
+<form bindsubmit="bindFormSubmit">
+  <textarea class='feedback' placeholder='请输入内容' name="textarea" cursor="12"/>
+  <button class='submit' type="primary" form-type="submit">提交</button>
+</form>
+

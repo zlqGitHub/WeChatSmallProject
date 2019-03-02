@@ -1,0 +1,30 @@
+<view class='container'>
+  <view class="weui-panel weui-panel_access">
+    <view wx:for="{{cBuilds}}" wx:key="true">
+      <view class="weui-panel__bd">
+        <navigator url="../cBuildDetails/cBuildDetails?name={{cBuilds[index].name}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                <image class="weui-media-box__thumb" src="{{cBuilds[index].img}}" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">{{cBuilds[index].no}}{{cBuilds[index].name}}</view>        
+                <view class="weui-media-box__desc">当前空教室数量：{{cBuilds[index].num}} 个</view>
+            </view>
+
+            <!-- 注意：catchtap点击事件在小程序中可以阻止冒泡 -->
+            <view class='nav' data-longitude='{{cBuilds[index].longitude}}' data-latitude='{{cBuilds[index].latitude}}' data-name='{{cBuilds[index].name}}' catchtap='navBtn'>
+              <image class='navImg' src='../../resources/images/nav1.png'></image>
+              <span class="go">go here</span> 
+            </view>
+
+        </navigator>
+        
+      </view>
+    </view>
+    
+  </view>  
+  <view class="weui-loadmore weui-loadmore_line"> 
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">没有更多了~~~</view> 
+  </view>
+ 
+</view>

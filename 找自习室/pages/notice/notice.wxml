@@ -1,0 +1,22 @@
+<!-- <view class='notice' wx:for="{{notices}}" wx:key="true"> -->
+<view class='notice' wx:for="{{notices}}" wx:key="true">
+  <!-- 公告内容 -->
+  <span class="time">{{notices[index].time}}</span>
+  <navigator url='../noticeDetail/noticeDetail?index={{index}}'>
+    <view class="weui-panel weui-panel_access">
+    <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+            <view class="weui-media-box__title weui-media-box__title_in-text">{{notices[index].title}}</view>
+              <view class="weui-media-box__desc">{{notices[index].describe}}</view>
+          </view>
+      </view>
+      <view class="weui-panel__ft">
+        <view class="weui-cell weui-cell_access weui-cell_link">
+            <view class="weui-cell__bd">查看</view>
+        </view>
+     </view>
+    </view>
+  </navigator>
+
+</view>
+
