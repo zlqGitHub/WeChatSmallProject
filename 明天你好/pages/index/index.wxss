@@ -1,0 +1,113 @@
+/**index.wxss**/
+.content{
+  height: 100%;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  font-family: 微软雅黑, 宋体;
+  box-sizing:border-box;
+  padding:20rpx 10rpx;
+  color: white;
+  font-size:16px;
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534562618794&di=38b8f00656a67036732f9c5eb68cb9f2&imgtype=0&src=http%3A%2F%2Fres11-aipai-pic.weplay.cn%2Faipai%2Fgonghui%2F201305%2F17%2F452d6a63e270874718755988e757059a.jpg);
+  background-size: 800rpx 1334rpx;
+}
+
+.info{
+  margin-top:50rpx;
+  width:100%;
+  height:160px;
+  color: white;
+}
+
+/*城市名称*/
+.city{
+  margin: 20rpx;
+  border-bottom:1px solid #043567;
+}
+
+/*当天温度*/
+.temp{
+  font-size: 120rpx;
+  line-height: 130rpx;
+  text-align: center;
+  padding-top:20rpx;
+  color:#043567;
+}
+
+/*感冒描述*/
+.weather{
+  line-height: 22px;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+/*昨天天气信息*/
+.yesterday{
+  width:93%;
+  padding:20rpx;
+  margin-top:50rpx;
+  border-radius:10rpx;
+  border:1px solid #043567;
+}
+
+/*昨天的*/
+.yesterday-title{
+  color:red;
+}
+
+/*最近五天天气信息*/
+.forecast{
+  width: 100%;
+  display:flex;
+  margin-top:50rpx;
+  align-self:flex-end;
+}
+
+/*每天一天的天气信息*/
+.next-day{
+  width:20%;
+  height:450rpx;
+  text-align:center;
+  line-height:30px;
+  font-size:14px;
+  margin: 0 3rpx;
+  border:1px solid #043567;
+  border-radius:10rpx;
+}
+
+/*日期*/
+.date{
+  margin-bottom:20rpx;
+  border-bottom:1px solid #043567;
+  color:#FF0000;
+}
+
+/*搜索区域*/
+.search-area{
+	display:flex;
+	padding: 1rem 0.5rem;
+  background-size: 1000rpx 1334rpx;
+}
+
+/*搜索区域的输入框*/
+.search-area input{
+	width:70%;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 10px #ccc;
+    color: #000;
+    background-color:#fff;
+    border-radius: 5px;
+}
+
+/*搜索区的按钮*/
+.search-area button{
+   width: 30%;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 5px;
+    background-color: #1E90FF;
+    font-size: 30rpx;
+}
