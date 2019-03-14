@@ -1,0 +1,22 @@
+<!-- 顶部轮播图 -->
+<swiper class='swiper' indicator-dots="{{indicatorDots}}" indicator-active-color='{{indicatorActiveColor}}' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+    <block wx:for="{{imgs}}" wx:key="true">
+      <swiper-item>
+        <image src="{{item}}"/>
+      </swiper-item>
+    </block>
+</swiper>
+<!-- 中间部分 -->
+<view class='center'>
+  <view class='center_left'>金毛在人们</view>
+  <view class='center_right'>
+    <image src='../../resources/images/follow.png'></image>
+    <span class='follow'>关注</span>
+  </view>
+</view>
+<!-- 底部内容 -->
+<view class='buttom'>
+传统B级车市场产品全面升级，综合产品力更加出色的车型拉动了消费观念，这一个五年之内推出的新品要比上一个五年的B级车更加智能化、颜值化、运动化以及性能化。
+
+不断升级之后，同样的售价我们购入产品力更强，综合实力更均衡的B级车，今天聊聊四款20万最强B级车，他们拥有不俗的实力以及极强的产品背书，买它们，妥妥的比同级别BBA更理性。
+</view>

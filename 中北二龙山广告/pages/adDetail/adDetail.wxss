@@ -1,0 +1,54 @@
+page{
+  background: #F7F7F7;
+}
+.swiper{
+  width: 100%;
+  height: 340rpx;
+}
+.swiper image{
+  width: 100%;
+  height: 100%;
+}
+.center{
+  width: 100%;
+  height: 140rpx;
+  background: #fff;
+}
+.center_left{
+  width: 75%;
+  height: 140rpx;
+  float: left;
+  line-height: 140rpx;
+  padding-left: 30rpx;
+  font-size: 42rpx;
+  color: #45AA68;
+}
+.center_right{
+  width: 20%;
+  height: 70%;
+  margin-top: 21rpx;
+  float: right;
+  border-left: 2rpx solid #E3E3E3;
+}
+.center_right image{
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+  margin: 1rpx auto 0;
+}
+.center_right .follow{
+  display: block;
+  width: 65rpx;
+  font-size: 30rpx;
+  color: #2A2A2A;
+  margin: -6rpx auto;
+}
+.buttom{
+  width: 90%;
+  height: auto;
+  margin: 15rpx auto;
+  font-size: 32rpx;
+  color: #6F6F6F;
+  line-height: 70rpx;
+  padding: 0 15rpx;
+}

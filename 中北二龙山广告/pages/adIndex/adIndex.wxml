@@ -1,0 +1,49 @@
+<!-- 导航条 -->
+<view class="navTop ">
+  <scroll-view scroll-x="true" class='navTop-lbs__items'>
+    <block wx:for="{{types}}" wx:key="true">
+      <view class="navTop-list-item"  data-type="{{item}}" data-index="{{index}}" bindtap="categoryChange">
+        <view class="navTop-list-item__title {{activeCategory == item ? 'active-top-border' : ''}}">{{ item }}</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+
+<!-- 底部内容 -->
+<block>
+  <navigator class='item' url='../adDetail/adDetail?title={{title}}&imgs={{imgs}}'>
+    <image src='{{imgs[0]}}'></image>
+    <view class='item_bottom'>
+      <span class='item_bottom_left'>{{title}}</span>
+      <span class='item_bottom_right'>详情>></span>
+    </view>
+     <p class='content'>{{content}}</p>
+  </navigator>
+  <navigator class='item' url='../adDetail/adDetail?title={{title}}&imgs={{imgs}}'>
+    <image src='{{imgs[0]}}'></image>
+    <view class='item_bottom'>
+      <span class='item_bottom_left'>{{title}}</span>
+      <span class='item_bottom_right'>详情>></span>
+    </view>
+     <p class='content'>{{content}}</p>
+  </navigator>
+  <navigator class='item' url='../adDetail/adDetail?title={{title}}&imgs={{imgs}}'>
+    <image src='{{imgs[0]}}'></image>
+    <view class='item_bottom'>
+      <span class='item_bottom_left'>{{title}}</span>
+      <span class='item_bottom_right'>详情>></span>
+    </view>
+     <p class='content'>{{content}}</p>
+  </navigator>
+  <navigator class='item' url='../adDetail/adDetail?title={{title}}&imgs={{imgs}}'>
+    <image src='{{imgs[0]}}'></image>
+    <view class='item_bottom'>
+      <span class='item_bottom_left'>{{title}}</span>
+      <span class='item_bottom_right'>详情>></span>
+    </view>
+     <p class='content'>{{content}}</p>
+  </navigator>
+</block>
+<view class="weui-loadmore weui-loadmore_line"> 
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">加载完成</view> 
+</view> 

@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/adIndex/adIndex",
+    "pages/adDetail/adDetail"
+  ],
+  "window":{
+      "navigationBarBackgroundColor": "#45AA68",
+      "navigationBarTextStyle": "white",
+      "enablePullDownRefresh": false
+  }
+}
