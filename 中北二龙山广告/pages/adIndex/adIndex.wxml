@@ -10,40 +10,21 @@
 </view>
 
 <!-- 底部内容 -->
-<block>
-  <navigator class='item' url='../adDetail/adDetail?title={{title}}&imgs={{imgs}}'>
-    <image src='{{imgs[0]}}'></image>
+<block wx:for='{{nowShow}}' wx:key='true'>
+  <navigator class='item' url='../adDetail/adDetail?title={{item.title}}&imgs={{item.imgs}}&content={{item.content}}'>
+    <image src='{{item.imgs[0]}}'></image>
     <view class='item_bottom'>
-      <span class='item_bottom_left'>{{title}}</span>
-      <span class='item_bottom_right'>详情>></span>
+      <span class='item_bottom_left'>{{item.title}}</span>
+      <span class='item_bottom_right'>浏览人数：1230</span>
+
     </view>
-     <p class='content'>{{content}}</p>
-  </navigator>
-  <navigator class='item' url='../adDetail/adDetail?title={{title}}&imgs={{imgs}}'>
-    <image src='{{imgs[0]}}'></image>
-    <view class='item_bottom'>
-      <span class='item_bottom_left'>{{title}}</span>
-      <span class='item_bottom_right'>详情>></span>
-    </view>
-     <p class='content'>{{content}}</p>
-  </navigator>
-  <navigator class='item' url='../adDetail/adDetail?title={{title}}&imgs={{imgs}}'>
-    <image src='{{imgs[0]}}'></image>
-    <view class='item_bottom'>
-      <span class='item_bottom_left'>{{title}}</span>
-      <span class='item_bottom_right'>详情>></span>
-    </view>
-     <p class='content'>{{content}}</p>
-  </navigator>
-  <navigator class='item' url='../adDetail/adDetail?title={{title}}&imgs={{imgs}}'>
-    <image src='{{imgs[0]}}'></image>
-    <view class='item_bottom'>
-      <span class='item_bottom_left'>{{title}}</span>
-      <span class='item_bottom_right'>详情>></span>
-    </view>
-     <p class='content'>{{content}}</p>
+     <p class='content'>{{item.content}}</p>
   </navigator>
 </block>
+<!-- 回到顶部 -->
+<view class='goTop' hidden='{{showTop}}' bindtap='goTop'>
+  <image src='../../resources/images/goTop.png'></image>
+</view>
 <view class="weui-loadmore weui-loadmore_line"> 
-    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">加载完成</view> 
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">没有更多了~~~</view> 
 </view> 

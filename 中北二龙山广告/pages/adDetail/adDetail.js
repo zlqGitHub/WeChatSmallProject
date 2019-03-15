@@ -10,9 +10,11 @@ Page({
   },
 
   onLoad: function (e) {
-    console.log(e);
+    // console.log(e);
     this.setData({
+      title:e.title,
       imgs:e.imgs.split(","),
+      content:e.content
       
     });
   },

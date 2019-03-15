@@ -72,8 +72,8 @@ page{
 }
 .item_bottom_right{
   line-height: 80rpx;
-  color: #45AA68;
-  font-size: 28rpx;
+  color: #999;
+  font-size: 26rpx;
   float: right;
   padding-right: 20rpx;
 }
@@ -82,4 +82,22 @@ page{
   padding-left: 20rpx;
   color: #8A8B8B;
   font-size: 26rpx;
+}
+
+.goTop{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 100rpx;
+  right: 30rpx;
+  background: #000000;
+  opacity:0.5;
+}
+.goTop image{
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  top: 15rpx;
+  left: 15rpx;
 }

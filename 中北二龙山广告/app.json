@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/adIndex/adIndex",
-    "pages/adDetail/adDetail"
+    "pages/adDetail/adDetail",
+    "pages/test/test"
   ],
   "window":{
       "navigationBarBackgroundColor": "#45AA68",
