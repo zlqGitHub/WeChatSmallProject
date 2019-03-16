@@ -10,16 +10,23 @@
 </view>
 
 <!-- 底部内容 -->
-<block wx:for='{{nowShow}}' wx:key='true'>
-  <navigator class='item' url='../adDetail/adDetail?title={{item.title}}&imgs={{item.imgs}}&content={{item.content}}'>
+<import src="../../wxParser/index.wxml"/>
+<block wx:for='{{nowShow}}' wx:key='true' class='block'>
+  <view class='item'>
     <image src='{{item.imgs[0]}}'></image>
     <view class='item_bottom'>
       <span class='item_bottom_left'>{{item.title}}</span>
-      <span class='item_bottom_right'>浏览人数：1230</span>
-
+      <navigator class='item_bottom_right' hover-class='none' url='../adDetail/adDetail?id={{item.id}}&title={{item.title}}&des={{item.des}}&imgs={{item.imgs}}&contentID={{item.contentID}}'>详情>></navigator>
+      <!-- <span class='item_bottom_right'>详情>></span> -->
     </view>
-     <p class='content'>{{item.content}}</p>
-  </navigator>
+    <p class='adNum'>广告编号：
+      <!-- 点击广告编号可以复制编号 -->
+      <font style="color:#45AA68;" bindtap="copyBtn" selectable="true" data-adNum='15513268481'>
+        15513268481
+      </font>
+    </p>
+    <p class='des'>{{item.des}}</p>
+  </view>
 </block>
 <!-- 回到顶部 -->
 <view class='goTop' hidden='{{showTop}}' bindtap='goTop'>

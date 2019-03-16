@@ -1,3 +1,4 @@
+@import '../../wxParser/index.wxss';
 page{
   background: #F7F7F7;
 }
@@ -18,10 +19,19 @@ page{
   width: 75%;
   height: 140rpx;
   float: left;
-  line-height: 140rpx;
   padding-left: 30rpx;
-  font-size: 42rpx;
+  padding-top: 10rpx;
+}
+.center_left .title{
   color: #45AA68;
+  line-height: 60rpx;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+.center_left .des{
+  color: #8A8B8B;
+  line-height: 35rpx;
+  font-size: 30rpx;  
 }
 .center_right{
   width: 20%;
@@ -46,9 +56,50 @@ page{
 .buttom{
   width: 90%;
   height: auto;
-  margin: 15rpx auto;
+  margin: 15rpx auto 50rpx;
   font-size: 32rpx;
   color: #6F6F6F;
   line-height: 70rpx;
   padding: 0 15rpx;
+}
+.goTop{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 100rpx;
+  right: 30rpx;
+  z-index: 1000;
+  background: #000000;
+  opacity:0.5;
+}
+.goTop image{
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  top: 15rpx;
+  left: 15rpx;
+}
+.tip{
+  width: 100%;
+  height: auto;
+  color: #FFF;
+  position: relative;
+  /* padding: 15rpx 20rpx; */
+  background: #45AA68;
+}
+.tip p:first-child{
+  display: block;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+  margin: 0 40rpx;
+}
+.tip p:last-child{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20rpx 20rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
 }

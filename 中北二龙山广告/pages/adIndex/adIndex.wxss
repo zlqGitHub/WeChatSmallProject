@@ -41,14 +41,13 @@ page{
 }
 
 .item{
-  display: block;
   width: 93%;
-  height: 470rpx;
+  height: auto;
   border-radius: 15rpx;
   margin: 25rpx auto;
   background: #FFF;
 }
-.item:nth-of-type(1){
+.item:nth-child(2){
   margin-top: 115rpx;
 }
 .item image{
@@ -57,7 +56,6 @@ page{
   height: 340rpx;
   border-top-left-radius: 15rpx;
   border-top-right-radius: 15rpx;
-
 }
 .item_bottom{
   width: 100%;
@@ -72,14 +70,22 @@ page{
 }
 .item_bottom_right{
   line-height: 80rpx;
-  color: #999;
+  color: #45AA68;
   font-size: 26rpx;
   float: right;
   padding-right: 20rpx;
 }
-.content{
+.adNum{
   display: block;
-  padding-left: 20rpx;
+  padding: 0 20rpx;
+  line-height: 50rpx;
+  color: #8A8B8B;
+  font-size: 26rpx;
+}
+.des{
+  display: block;
+  padding: 0 20rpx 15rpx;
+  line-height: 50rpx;
   color: #8A8B8B;
   font-size: 26rpx;
 }
