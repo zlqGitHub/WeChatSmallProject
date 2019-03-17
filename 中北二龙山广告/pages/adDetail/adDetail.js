@@ -12,6 +12,14 @@ Page({
     showTop: true,  //回到顶部按钮显示与隐藏
   },
 
+  //点击广告编号可以复制编号
+  copyBtn: function (e) {
+    // console.log(e.currentTarget.dataset.adnum);    //广告编号
+    wx.setClipboardData({
+      data: e.currentTarget.dataset.adnum,
+    })
+  },
+
   //页面滚动时触发
   onPageScroll: function (e) {
     // console.log(e.scrollTop);   //当前页面的高度
@@ -31,7 +39,7 @@ Page({
   goTop: function () {
     wx.pageScrollTo({
       scrollTop: 0,
-      duration: 300
+      duration: 0
     })
   },
   onLoad: function (e) {
@@ -41,7 +49,8 @@ Page({
       title:e.title,
       des:e.des,
       imgs:e.imgs.split(","),
-      contentID:e.contentID
+      contentID:e.contentID,
+      tip:e.tip
     });
     let html;
     let that = this;

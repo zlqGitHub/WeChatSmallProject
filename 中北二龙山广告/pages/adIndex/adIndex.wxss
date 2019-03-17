@@ -1,5 +1,5 @@
 page{
-  background: #F1F3F2;
+  background: #F3F7F6;
 }
 .navTop{
   height: 90rpx;
@@ -106,4 +106,17 @@ page{
   position: relative;
   top: 15rpx;
   left: 15rpx;
+}
+.none{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #45AA68;
+  font-size: 28rpx;
+}
+.none image{
+  display: block;
+  width: 666rpx;
+  height: 312rpx;
+  margin: 380rpx auto 20rpx;
 }

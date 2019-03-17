@@ -11,11 +11,16 @@
 <view class='center'>
   <view class='center_left'>
     <p class='title'>{{title}} </p>
+    <p class='adNum'>广告编号：
+      <!-- 点击广告编号可以复制编号 -->
+      <font style="color:#45AA68;" bindtap="copyBtn" selectable="true" data-adNum='15513268481'>
+        15513268481
+      </font>
+    </p>
     <p class='des'>{{des}}</p>
   </view>
   <view class='center_right'>
-    <image src='../../resources/images/follow.png'></image>
-    <span class='follow'>关注</span>
+    <p>{{tip}}</p>
   </view>
 </view>
 <!-- 底部内容 -->
@@ -32,6 +37,6 @@
 <view class='tip'>
   <p>友情提示：</p>
   <p>
-    中北二龙山本着维护中北师生利益的原则，会严格审查商家身份和广告内容。本广告图片及内容仅供参考，买卖双方的权利与义务以买卖双方合同为准，请买卖双方自行仔细甄别。若利益受损，请第一时间联系本平台，我们将尽最大努力协助利益受损方维护权益。
+        中北二龙山本着维护中北师生利益的原则，会严格审查商家身份和广告内容。本广告图片及内容仅供参考，买卖双方的权利与义务以买卖双方合同为准，请买卖双方自行仔细甄别。若利益受损，请第一时间联系本平台，我们将尽最大努力协助利益受损方维护权益。
   </p>
 </view>

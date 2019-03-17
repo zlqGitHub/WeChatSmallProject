@@ -27,7 +27,7 @@ let searchContent = function(contentID,cb){
 let deleteAd = function(id){
   let tableId = config.TABLEID.test;
   let Product = new wx.BaaS.TableObject(tableId)
-  Product.delete('5c8cf64f77a61e799a80ef34').then(res => {
+  Product.delete(id).then(res => {
     console.log("删除成功");
   }, err => {
     console.log(err);
