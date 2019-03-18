@@ -18,12 +18,10 @@ page{
   color: #ffffff;
 }
 .weui-btn-area{
-  width: 181rpx;
+  /* width: 181rpx; */
   height: 40rpx;
   line-height: 40rpx;
   position: absolute;
-}
-.ord_campus{
   top: -28rpx;
 }
 .weui-btn-area .left{
@@ -88,6 +86,13 @@ page{
   white-space: nowrap;
   font-weight: 200;
   color: #FFF;
+}
+.topOf{
+  top: -10rpx;
+}
+.ord_campus{
+  position: relative;
+  top: -10rpx;
 }
 .active-top-border {
   border-bottom: 4rpx solid #ffffff;

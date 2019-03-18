@@ -3,7 +3,7 @@
 
     <!-- 切换校区 -->
     <picker bindchange="bindPickerChange"  value="{{index}}" range="{{campus}}">
-      <view class="weui-btn-area {{!isIphoneX ? 'ord_campus' : ''}}">
+      <view class="weui-btn-area {{isIphoneX ? 'topOf' : ''}}">
         <view class='left'></view>
         <view class='center'>{{campus[index]}}</view>
         <view class='right'></view>
@@ -14,7 +14,7 @@
       <scroll-view scroll-x="true">
         <block wx:for="{{nowTypes}}" wx:key="true">
           <view class="navTop-list-item"  data-cate="{{item}}" data-index="{{index}}" bindtap="categoryChange">
-            <view class="navTop-list-item__title {{activeCategory == item ? 'active-top-border' : ''}}">{{ item }}</view>
+            <view class="navTop-list-item__title {{activeCategory == item ? 'active-top-border' : ''}} {{isIphoneX ? 'ord_campus' : ''}}">{{ item }}</view>
           </view>
         </block>
       </scroll-view>
@@ -43,7 +43,7 @@
       <scroll-view class='scroll-view-x' scroll-x="true" scroll-left="{{scrollLeft}}">
         <block wx:for="{{nowShow}}" wx:key="true">
           <navigator class="list-item" url='../detail/detail?img={{item.img}}&title={{item.title}}&longitude={{item.longitude}}&latitude={{item.latitude}}&des={{item.des}}'>
-            <image class="img" src='{{item.img[0]}}'></image>
+            <image class="img" src='{{item.img[0]}}' lazy-load='true'  cache='true'></image>
             <view class='title'>
               <p>{{item.title}}</p>
             </view>

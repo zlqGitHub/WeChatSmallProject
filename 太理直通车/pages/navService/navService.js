@@ -5,7 +5,7 @@ Page({
   data: {
     campus: ["迎西校区", "虎峪校区", "明向校区"],    //太理共三个校区
     compareTypes: ["出入门","景点","院系","教学楼","图书馆","宿舍","餐厅","运动场","医院","银行","服务"],  //比较类型，便于判断选择marker图标
-    yxCampusTypes: ["出入门", "景点", "院系", "教学楼", "宿舍","餐厅", "图书馆", "运动场","医院"],    //迎西校区
+    yxCampusTypes: ["出入门", "景点", "院系", "教学楼", "宿舍", "餐厅", "图书馆", "运动场", "医院", "服务"],    //迎西校区
     hyCampusTypes: ["出入门", "景点", "院系", "教学楼", "宿舍", "餐厅","图书馆","运动场"],   //虎峪校区
     mxCampusTypes: ["出入门", "景点","院系", "教学楼", "宿舍", "餐厅","图书馆", "运动场", "服务"],   //明向校区
 
@@ -198,35 +198,56 @@ Page({
     this.setData({
       isIphoneX
     });
+    console.log(isIphoneX);
     let that = this;
     let result = [];    //查表的结果
+    
+    wx.getStorage({
+      key: 'key',
+      success: function(res) {
+        that.setIndexShow(res.data);
+      },
+      fail:function(){
+        tools.searchInfo(res => {
+          result = res.data.objects;
+          that.setIndexShow(result);
+          wx.setStorage({
+            key: 'key',
+            data: result
+          })
+        });
+      }
+    })
+
+  },
+
+  //设置当前显示
+  setIndexShow: function(result){
     let yxCampus = [];   //存放迎西校区内容
     let hyCampus = [];
     let mxCampus = [];
     let nowShow = [];    //存放当前显示校区类型的内容
-    tools.searchInfo(res => {
-      result = res.data.objects;
-      for (var i = 0; i < result.length ; i++){
-        if (result[i].campus == "迎西校区"){
-          yxCampus.push(result[i]);     //将迎西校区的内容保存   
-        }
-        else if (result[i].campus == "虎峪校区") {
-          hyCampus.push(result[i]);     
-        }
-        else{
-          mxCampus.push(result[i]);  
-        }
+    for (var i = 0; i < result.length; i++) {
+      if (result[i].campus == "迎西校区") {
+        yxCampus.push(result[i]);     //将迎西校区的内容保存   
       }
-      //更新data中yxCampus、hyCampus、mxCampus
-      that.setData({
-        yxCampus,
-        hyCampus,
-        mxCampus
-      });
-      //默认显示迎西校区的内容，并显示第一个种类的信息
-      this.changeCampus(0);  //0表示选择迎西校区 
+      else if (result[i].campus == "虎峪校区") {
+        hyCampus.push(result[i]);
+      }
+      else {
+        mxCampus.push(result[i]);
+      }
+    }
+    //更新data中yxCampus、hyCampus、mxCampus
+    this.setData({
+      yxCampus,
+      hyCampus,
+      mxCampus
     });
+    //默认显示迎西校区的内容，并显示第一个种类的信息
+    this.changeCampus(0);  //0表示选择迎西校区 
   },
+
   //用户点击分享按钮
   onShareAppMessage: function () {
     return {     //自定义转发分享内容

@@ -21,7 +21,8 @@ Page({
     let that = this;
     wx.getSystemInfo({
       success: function(res) {
-        if (res.model == 'iPhone X'){
+        console.log(res);
+        if (res.model.match(/iPhone/)){
           app.globalData.isIphoneX = true;
         }
       },
